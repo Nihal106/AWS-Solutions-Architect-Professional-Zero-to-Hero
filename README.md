@@ -165,105 +165,234 @@ Design secure, scalable, and highly available AWS networking using VPC, Transit 
 
 # 6. Compute Architecture
 
-Learn how to select the right compute platform for different workloads using EC2, Auto Scaling, ECS, EKS, Lambda, Elastic Beanstalk, and App Runner.
+This section explains how to design scalable, highly available, and cost-effective compute architectures on AWS. It covers virtual machines, containers, serverless computing, Auto Scaling, workload placement, purchasing options, and enterprise compute design decisions.
 
 📂 **[Explore → Compute Architecture](./06-Compute-Architecture/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 6.1 | [Amazon EC2 Fundamentals](./06-Compute-Architecture/01-Amazon-EC2-Fundamentals.md) | Virtual machines, instance lifecycle, and EC2 architecture |
+| 6.2 | [EC2 Instance Types](./06-Compute-Architecture/02-EC2-Instance-Types.md) | General Purpose, Compute Optimized, Memory Optimized, Storage Optimized, and Accelerated Computing |
+| 6.3 | [EC2 Purchasing Options](./06-Compute-Architecture/03-EC2-Purchasing-Options.md) | On-Demand, Reserved Instances, Savings Plans, Spot Instances, and Dedicated Hosts |
+| 6.4 | [Launch Templates](./06-Compute-Architecture/04-Launch-Templates.md) | Standardizing EC2 deployments |
+| 6.5 | [Auto Scaling Groups](./06-Compute-Architecture/05-Auto-Scaling-Groups.md) | Scaling workloads automatically |
+| 6.6 | [Elastic Load Balancing](./06-Compute-Architecture/06-Elastic-Load-Balancing.md) | ALB, NLB, and Gateway Load Balancer |
+| 6.7 | [Amazon ECS](./06-Compute-Architecture/07-Amazon-ECS.md) | Container orchestration with ECS |
+| 6.8 | [Amazon EKS](./06-Compute-Architecture/08-Amazon-EKS.md) | Kubernetes on AWS |
+| 6.9 | [AWS Lambda](./06-Compute-Architecture/09-AWS-Lambda.md) | Serverless compute architecture |
+| 6.10 | [Elastic Beanstalk](./06-Compute-Architecture/10-Elastic-Beanstalk.md) | Platform-as-a-Service deployments |
+| 6.11 | [AWS App Runner](./06-Compute-Architecture/11-AWS-App-Runner.md) | Simplified container deployments |
+| 6.12 | [AWS Batch & Outposts](./06-Compute-Architecture/12-AWS-Batch-and-Outposts.md) | Batch workloads and hybrid compute |
 
 ---
 
 # 7. Application Architecture
 
-Design modern cloud-native applications using three-tier, microservices, serverless, API-first, and event-driven architectures.
+This section covers modern application architecture patterns on AWS, including monolithic, microservices, serverless, API-first, and event-driven designs for building scalable enterprise applications.
 
 📂 **[Explore → Application Architecture](./07-Application-Architecture/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 7.1 | [Three-Tier Architecture](./07-Application-Architecture/01-Three-Tier-Architecture.md) | Classic web application architecture |
+| 7.2 | [Microservices Architecture](./07-Application-Architecture/02-Microservices-Architecture.md) | Independent service-based design |
+| 7.3 | [Serverless Architecture](./07-Application-Architecture/03-Serverless-Architecture.md) | Event-driven serverless applications |
+| 7.4 | [API Gateway Design](./07-Application-Architecture/04-API-Gateway-Design.md) | Designing scalable APIs |
+| 7.5 | [Event-Driven Patterns](./07-Application-Architecture/05-Event-Driven-Patterns.md) | Asynchronous architectures |
+| 7.6 | [Caching Strategies](./07-Application-Architecture/06-Caching-Strategies.md) | CloudFront, ElastiCache, and application caching |
+| 7.7 | [Application Modernization](./07-Application-Architecture/07-Application-Modernization.md) | Modernizing legacy workloads |
 
 ---
 
 # 8. Messaging & Integration
 
-Connect distributed applications using SNS, SQS, EventBridge, Step Functions, and Amazon MQ.
+This section explores how AWS services communicate across distributed systems using messaging, events, orchestration, and integration patterns.
 
 📂 **[Explore → Messaging & Integration](./08-Messaging-and-Integration/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 8.1 | [Amazon SNS](./08-Messaging-and-Integration/01-Amazon-SNS.md) | Publish-subscribe messaging |
+| 8.2 | [Amazon SQS](./08-Messaging-and-Integration/02-Amazon-SQS.md) | Queue-based messaging |
+| 8.3 | [Amazon EventBridge](./08-Messaging-and-Integration/03-Amazon-EventBridge.md) | Event routing |
+| 8.4 | [AWS Step Functions](./08-Messaging-and-Integration/04-AWS-Step-Functions.md) | Workflow orchestration |
+| 8.5 | [Amazon MQ](./08-Messaging-and-Integration/05-Amazon-MQ.md) | Managed message brokers |
+| 8.6 | [Integration Patterns](./08-Messaging-and-Integration/06-Integration-Patterns.md) | Fan-out, queue buffering, and orchestration |
 
 ---
 
 # 9. Storage Architecture
 
-Master AWS storage services including S3, EBS, EFS, FSx, Storage Gateway, lifecycle policies, replication, and AWS Backup.
+This section explains how AWS storage services work together to build secure, scalable, durable, and cost-efficient storage solutions for enterprise workloads.
 
 📂 **[Explore → Storage Architecture](./09-Storage-Architecture/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 9.1 | [Amazon S3 Fundamentals](./09-Storage-Architecture/01-Amazon-S3-Fundamentals.md) | Object storage fundamentals |
+| 9.2 | [S3 Storage Classes](./09-Storage-Architecture/02-S3-Storage-Classes.md) | Choosing the right storage tier |
+| 9.3 | [S3 Lifecycle Policies](./09-Storage-Architecture/03-S3-Lifecycle-Policies.md) | Automating storage transitions |
+| 9.4 | [Versioning & Replication](./09-Storage-Architecture/04-Versioning-and-Replication.md) | Data protection |
+| 9.5 | [Amazon EBS](./09-Storage-Architecture/05-Amazon-EBS.md) | Block storage |
+| 9.6 | [Amazon EFS](./09-Storage-Architecture/06-Amazon-EFS.md) | Shared file storage |
+| 9.7 | [Amazon FSx](./09-Storage-Architecture/07-Amazon-FSx.md) | Managed file systems |
+| 9.8 | [AWS Storage Gateway](./09-Storage-Architecture/08-AWS-Storage-Gateway.md) | Hybrid storage |
+| 9.9 | [AWS Backup](./09-Storage-Architecture/09-AWS-Backup.md) | Centralized backup management |
 
 ---
 
 # 10. Database Architecture
 
-Choose the right database service for every workload using RDS, Aurora, DynamoDB, Redshift, ElastiCache, Neptune, DocumentDB, DMS, and SCT.
+This section helps you select the right AWS database service based on workload requirements, scalability, consistency, performance, and operational considerations.
 
 📂 **[Explore → Database Architecture](./10-Database-Architecture/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 10.1 | [Amazon RDS](./10-Database-Architecture/01-Amazon-RDS.md) | Managed relational databases |
+| 10.2 | [Amazon Aurora](./10-Database-Architecture/02-Amazon-Aurora.md) | High-performance relational database |
+| 10.3 | [Amazon DynamoDB](./10-Database-Architecture/03-Amazon-DynamoDB.md) | NoSQL database |
+| 10.4 | [Amazon ElastiCache](./10-Database-Architecture/04-Amazon-ElastiCache.md) | In-memory caching |
+| 10.5 | [Amazon Redshift](./10-Database-Architecture/05-Amazon-Redshift.md) | Data warehouse |
+| 10.6 | [Amazon Neptune](./10-Database-Architecture/06-Amazon-Neptune.md) | Graph database |
+| 10.7 | [Amazon DocumentDB](./10-Database-Architecture/07-Amazon-DocumentDB.md) | Document database |
+| 10.8 | [AWS DMS & SCT](./10-Database-Architecture/08-AWS-DMS-and-SCT.md) | Database migration |
 
 ---
 
 # 11. Data Analytics
 
-Build modern analytics platforms using Glue, Athena, EMR, Kinesis, Lake Formation, and QuickSight.
+This section introduces AWS analytics services for processing, transforming, querying, streaming, and visualizing data at scale.
 
 📂 **[Explore → Data Analytics](./11-Data-Analytics/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 11.1 | [AWS Glue](./11-Data-Analytics/01-AWS-Glue.md) | ETL service |
+| 11.2 | [Amazon Athena](./11-Data-Analytics/02-Amazon-Athena.md) | SQL queries on S3 |
+| 11.3 | [Amazon EMR](./11-Data-Analytics/03-Amazon-EMR.md) | Big data processing |
+| 11.4 | [Amazon Kinesis](./11-Data-Analytics/04-Amazon-Kinesis.md) | Streaming analytics |
+| 11.5 | [Lake Formation](./11-Data-Analytics/05-Lake-Formation.md) | Data lake governance |
+| 11.6 | [Amazon QuickSight](./11-Data-Analytics/06-Amazon-QuickSight.md) | Business intelligence |
 
 ---
 
 # 12. Containers & Serverless
 
-Deploy containerized and serverless workloads using ECS, EKS, Fargate, Lambda, and API Gateway.
+This section covers container orchestration, serverless computing, and modern deployment strategies for cloud-native applications.
 
 📂 **[Explore → Containers & Serverless](./12-Containers-and-Serverless/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 12.1 | [Docker Fundamentals](./12-Containers-and-Serverless/01-Docker-Fundamentals.md) | Container basics |
+| 12.2 | [Amazon ECS](./12-Containers-and-Serverless/02-Amazon-ECS.md) | Container orchestration |
+| 12.3 | [AWS Fargate](./12-Containers-and-Serverless/03-AWS-Fargate.md) | Serverless containers |
+| 12.4 | [Amazon EKS](./12-Containers-and-Serverless/04-Amazon-EKS.md) | Kubernetes |
+| 12.5 | [AWS Lambda](./12-Containers-and-Serverless/05-AWS-Lambda.md) | Event-driven serverless |
+| 12.6 | [Amazon API Gateway](./12-Containers-and-Serverless/06-Amazon-API-Gateway.md) | API management |
 
 ---
 
 # 13. Observability & Operations
 
-Implement monitoring, logging, tracing, automation, compliance, and operational excellence using CloudWatch, CloudTrail, AWS Config, X-Ray, Systems Manager, and Trusted Advisor.
+This section explains how to monitor, automate, secure, and operate production AWS environments using native observability and management services.
 
 📂 **[Explore → Observability & Operations](./13-Observability-and-Operations/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 13.1 | [Amazon CloudWatch](./13-Observability-and-Operations/01-Amazon-CloudWatch.md) | Metrics, logs, and alarms |
+| 13.2 | [AWS CloudTrail](./13-Observability-and-Operations/02-AWS-CloudTrail.md) | API auditing |
+| 13.3 | [AWS Config](./13-Observability-and-Operations/03-AWS-Config.md) | Configuration compliance |
+| 13.4 | [AWS X-Ray](./13-Observability-and-Operations/04-AWS-X-Ray.md) | Distributed tracing |
+| 13.5 | [AWS Systems Manager](./13-Observability-and-Operations/05-AWS-Systems-Manager.md) | Fleet management |
+| 13.6 | [AWS Trusted Advisor](./13-Observability-and-Operations/06-AWS-Trusted-Advisor.md) | Best practice recommendations |
+| 13.7 | [AWS Compute Optimizer](./13-Observability-and-Operations/07-AWS-Compute-Optimizer.md) | Resource optimization |
 
 ---
 
 # 14. Disaster Recovery & Business Continuity
 
-Design resilient enterprise architectures using Multi-AZ, Multi-Region, Pilot Light, Warm Standby, and Active-Active strategies.
+This section focuses on designing resilient architectures that minimize downtime and data loss during failures and disasters.
 
 📂 **[Explore → Disaster Recovery & Business Continuity](./14-Disaster-Recovery-and-BCP/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 14.1 | [Backup Strategies](./14-Disaster-Recovery-and-BCP/01-Backup-Strategies.md) | Backup planning |
+| 14.2 | [Multi-AZ Architecture](./14-Disaster-Recovery-and-BCP/02-Multi-AZ-Architecture.md) | High availability |
+| 14.3 | [Multi-Region Design](./14-Disaster-Recovery-and-BCP/03-Multi-Region-Design.md) | Regional resilience |
+| 14.4 | [Pilot Light Strategy](./14-Disaster-Recovery-and-BCP/04-Pilot-Light.md) | Minimal standby |
+| 14.5 | [Warm Standby](./14-Disaster-Recovery-and-BCP/05-Warm-Standby.md) | Reduced recovery time |
+| 14.6 | [Active-Active Architecture](./14-Disaster-Recovery-and-BCP/06-Active-Active-Architecture.md) | Multi-region active deployments |
+| 14.7 | [RPO & RTO Planning](./14-Disaster-Recovery-and-BCP/07-RPO-and-RTO-Planning.md) | Recovery planning |
 
 ---
 
 # 15. Migration & Modernization
 
-Plan enterprise cloud migration using AWS Cloud Adoption Framework, Migration Hub, Application Migration Service, DMS, SCT, and Snow Family.
+This section explains how organizations migrate, modernize, and transform workloads on AWS using proven enterprise frameworks and migration services.
 
 📂 **[Explore → Migration & Modernization](./15-Migration-and-Modernization/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 15.1 | [AWS Cloud Adoption Framework](./15-Migration-and-Modernization/01-AWS-Cloud-Adoption-Framework.md) | Enterprise cloud adoption |
+| 15.2 | [Migration Hub](./15-Migration-and-Modernization/02-Migration-Hub.md) | Migration management |
+| 15.3 | [Application Migration Service](./15-Migration-and-Modernization/03-Application-Migration-Service.md) | Server migration |
+| 15.4 | [AWS DMS](./15-Migration-and-Modernization/04-AWS-DMS.md) | Database migration |
+| 15.5 | [AWS SCT](./15-Migration-and-Modernization/05-AWS-SCT.md) | Schema conversion |
+| 15.6 | [AWS Snow Family](./15-Migration-and-Modernization/06-AWS-Snow-Family.md) | Offline migration |
 
 ---
 
 # 16. Cost Optimization
 
-Reduce cloud spending using Savings Plans, Reserved Instances, Spot Instances, Cost Explorer, Budgets, and Trusted Advisor.
+This section helps you optimize AWS costs without compromising performance, security, or reliability.
 
 📂 **[Explore → Cost Optimization](./16-Cost-Optimization/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 16.1 | [Savings Plans](./16-Cost-Optimization/01-Savings-Plans.md) | Flexible savings |
+| 16.2 | [Reserved Instances](./16-Cost-Optimization/02-Reserved-Instances.md) | Long-term discounts |
+| 16.3 | [Spot Instances](./16-Cost-Optimization/03-Spot-Instances.md) | Low-cost compute |
+| 16.4 | [Cost Explorer](./16-Cost-Optimization/04-Cost-Explorer.md) | Spending analysis |
+| 16.5 | [AWS Budgets](./16-Cost-Optimization/05-AWS-Budgets.md) | Budget alerts |
+| 16.6 | [Trusted Advisor Cost Checks](./16-Cost-Optimization/06-Trusted-Advisor-Cost-Checks.md) | Cost recommendations |
 
 ---
 
 # 17. Professional Design Scenarios
 
-Solve real SAP-C02 enterprise architecture scenarios involving governance, networking, security, migration, disaster recovery, and cost optimization.
+Apply everything learned throughout the repository to solve complex enterprise architecture challenges similar to SAP-C02 exam scenarios.
 
 📂 **[Explore → Professional Design Scenarios](./17-Professional-Scenarios/README.md)**
+
+| # | Sub-Topic | Description |
+|---|-----------|-------------|
+| 17.1 | [Multi-Account Enterprise Design](./17-Professional-Scenarios/01-Multi-Account-Enterprise-Design.md) | Enterprise governance |
+| 17.2 | [Hybrid Connectivity](./17-Professional-Scenarios/02-Hybrid-Connectivity.md) | Direct Connect and VPN |
+| 17.3 | [Financial Governance](./17-Professional-Scenarios/03-Financial-Governance.md) | Cost governance |
+| 17.4 | [Security Scenarios](./17-Professional-Scenarios/04-Security-Scenarios.md) | Enterprise security |
+| 17.5 | [Disaster Recovery Scenarios](./17-Professional-Scenarios/05-Disaster-Recovery-Scenarios.md) | Resilience design |
 
 ---
 
 # 18. Architecture Diagrams
 
-A collection of production-ready AWS reference architectures and visual design patterns.
+This section contains production-ready AWS reference architectures and visual design patterns used throughout the repository.
 
 📂 **[Explore → Architecture Diagrams](./18-Architecture-Diagrams/README.md)**
+
+| # | Diagram | Description |
+|---|---------|-------------|
+| 18.1 | [Three-Tier Architecture](./18-Architecture-Diagrams/01-Three-Tier-Architecture.md) | Classic web architecture |
+| 18.2 | [Serverless Architecture](./18-Architecture-Diagrams/02-Serverless-Architecture.md) | Event-driven design |
+| 18.3 | [Landing Zone Architecture](./18-Architecture-Diagrams/03-Landing-Zone-Architecture.md) | Multi-account enterprise setup |
+| 18.4 | [Transit Gateway Architecture](./18-Architecture-Diagrams/04-Transit-Gateway-Architecture.md) | Hub-and-spoke networking |
+| 18.5 | [Disaster Recovery Architecture](./18-Architecture-Diagrams/05-Disaster-Recovery-Architecture.md) | Multi-region resilience |
 
 ---
 
@@ -273,16 +402,30 @@ Prepare for AWS Solutions Architect interviews with service-wise, scenario-based
 
 📂 **[Explore → Interview Questions](./19-Interview-Questions/README.md)**
 
+| # | Section | Description |
+|---|---------|-------------|
+| 19.1 | [EC2 Interview Questions](./19-Interview-Questions/01-EC2-Interview-Questions.md) | Compute questions |
+| 19.2 | [Networking Interview Questions](./19-Interview-Questions/02-Networking-Interview-Questions.md) | VPC and networking |
+| 19.3 | [Storage Interview Questions](./19-Interview-Questions/03-Storage-Interview-Questions.md) | S3, EBS, and EFS |
+| 19.4 | [Scenario-Based Questions](./19-Interview-Questions/04-Scenario-Based-Questions.md) | Real interview scenarios |
+
 ---
 
 # 20. Capstone Projects
 
-Build complete enterprise AWS projects from scratch using production-ready architectures.
+Build complete enterprise AWS projects that combine multiple AWS services into production-ready architectures.
 
 📂 **[Explore → Capstone Projects](./20-Capstone-Projects/README.md)**
 
----
+| # | Project | Description |
+|---|---------|-------------|
+| 20.1 | [Highly Available Web Application](./20-Capstone-Projects/01-Highly-Available-Web-Application.md) | ALB + Auto Scaling + RDS |
+| 20.2 | [Serverless Image Processor](./20-Capstone-Projects/02-Serverless-Image-Processor.md) | Lambda + S3 + API Gateway |
+| 20.3 | [Microservices Platform](./20-Capstone-Projects/03-Microservices-Platform.md) | ECS + Service Discovery |
+| 20.4 | [Enterprise Landing Zone](./20-Capstone-Projects/04-Enterprise-Landing-Zone.md) | Control Tower + Organizations |
+| 20.5 | [Multi-Region Disaster Recovery](./20-Capstone-Projects/05-Multi-Region-Disaster-Recovery.md) | Active-Active architecture |
 
+---
 # 🗂 Repository Structure
 
 ```text
