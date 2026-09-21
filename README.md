@@ -1,14 +1,15 @@
+<escape>
 <p align="center">
   <img src="assets/banner.png" alt="AWS Solutions Architect Professional Zero to Hero Banner" width="100%">
 </p>
 
 <p align="center">
 
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge\&logo=amazonaws\&logoColor=white)
 ![SAP-C02](https://img.shields.io/badge/SAP--C02-Solutions%20Architect%20Professional-purple?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-Intermediate%20to%20Advanced-blue?style=for-the-badge)
 ![Well-Architected](https://img.shields.io/badge/Well--Architected-Framework-FF9900?style=for-the-badge)
-![Hands-on Labs](https://img.shields.io/badge/Hands--On-Labs-success?style=for-the-badge)
+![Hands-on](https://img.shields.io/badge/Hands--On-Labs-success?style=for-the-badge)
 
 </p>
 
@@ -18,338 +19,267 @@
 
 ---
 
-## ☁️ About This Repository
+# ☁️ About This Repository
 
 **AWS Solutions Architect Professional – Zero to Hero** is a structured, architecture-focused learning repository designed to help you master AWS from beginner to professional level while preparing for the **AWS Certified Solutions Architect – Professional (SAP-C02)** certification.
 
 Unlike traditional certification notes, this repository focuses on:
 
-- Enterprise architecture design
-- AWS Cloud Adoption Framework (CAF)
-- Landing Zone architecture using AWS Organizations & Control Tower
-- AWS Well-Architected Framework
-- Production-ready hands-on labs
-- Real-world design scenarios
-- Interview preparation
-- Architecture diagrams and design patterns
+* Enterprise architecture design
+* AWS Cloud Adoption Framework (CAF)
+* Landing Zone architecture using AWS Organizations & Control Tower
+* AWS Well-Architected Framework
+* Production-ready hands-on labs
+* Real-world design scenarios
+* Architecture diagrams and decision-making
+* Interview preparation
 
-Every module is organized into its own dedicated folder with detailed explanations, diagrams, service comparisons, implementation guides, and practical labs.
+Every section is organized into its own folder with a dedicated `README.md` covering architecture concepts, service comparisons, implementation guides, hands-on labs, and production scenarios.
 
 ---
 
-## 🎯 Learning Outcomes
+# 🎯 Learning Outcomes
 
 By the end of this repository, you'll be able to:
 
-- Design enterprise-scale AWS architectures.
-- Apply the AWS Well-Architected Framework.
-- Build secure Landing Zones with AWS Control Tower.
-- Implement AWS Cloud Adoption Framework strategies.
-- Design multi-account governance using AWS Organizations.
-- Build highly available networking with Transit Gateway, Direct Connect, VPN, CloudFront, and PrivateLink.
-- Select appropriate compute services including EC2, ECS, EKS, Lambda, and App Runner.
-- Design scalable application architectures using APIs, messaging, and event-driven patterns.
-- Choose the right storage and database solutions for different workloads.
-- Build disaster recovery solutions using Pilot Light, Warm Standby, and Active-Active architectures.
-- Plan enterprise migration and modernization strategies.
-- Optimize workloads for cost, performance, security, and reliability.
+* Translate business and technical requirements into AWS solution architectures.
+* Apply the AWS Well-Architected Framework to design secure, reliable, high-performing, and cost-effective solutions.
+* Design enterprise Landing Zones using AWS Organizations and Control Tower.
+* Apply the AWS Cloud Adoption Framework (CAF) to cloud transformation projects.
+* Build secure multi-account governance using Organizational Units, Service Control Policies, IAM Identity Center, and AWS Resource Access Manager.
+* Design highly available networking using VPC, Transit Gateway, Direct Connect, VPN, Route 53, CloudFront, Global Accelerator, and PrivateLink.
+* Select the appropriate compute platform using EC2, Auto Scaling, ECS, EKS, Lambda, App Runner, and Elastic Beanstalk.
+* Design scalable application architectures using APIs, messaging, event-driven patterns, and serverless technologies.
+* Choose the right storage and database services for different workload requirements.
+* Implement observability using CloudWatch, CloudTrail, AWS Config, X-Ray, and Systems Manager.
+* Design disaster recovery strategies using Multi-AZ, Multi-Region, Pilot Light, Warm Standby, and Active-Active architectures.
+* Plan enterprise migration and modernization using AWS Migration Hub, Application Migration Service, DMS, SCT, and Snow Family.
+* Evaluate architectural trade-offs involving performance, security, reliability, complexity, and cost.
+* Build production-ready AWS projects from scratch.
 
 ---
 
-# 📚 Table of Contents
+# 📚 Repository Contents
 
-## 1. Architecture Fundamentals
-
-Build the foundation required to think like an AWS Solutions Architect.
-
-| # | Topic |
-|---|-------|
-|1.1| Introduction to Solution Architecture |
-|1.2| AWS Global Infrastructure |
-|1.3| Business Requirements |
-|1.4| Architecture Decision Making |
-|1.5| Architecture Quality Attributes |
-|1.6| AWS Design Principles |
-|1.7| Architecture Patterns |
-|1.8| Scalability, Availability & Resiliency |
-|1.9| Architecture Trade-offs |
-|1.10| Architecture Documentation & ADRs |
+This repository follows a structured **Zero-to-Hero roadmap**, progressing from architecture fundamentals to enterprise-scale AWS solution design.
 
 ---
 
-## 2. AWS Well-Architected Framework
+# 1. Architecture Fundamentals
 
-Design workloads using AWS best practices.
+This section introduces the core concepts of AWS solution architecture and builds the foundation required for SAP-C02. It focuses on understanding business problems, translating requirements into architecture, evaluating design options, and making decisions based on reliability, security, performance, cost, and operational needs.
 
-- Operational Excellence
-- Security
-- Reliability
-- Performance Efficiency
-- Cost Optimization
-- Sustainability
+📂 **[Explore → Architecture Fundamentals](./01-Architecture-Fundamentals/README.md)**
 
----
-
-## 3. Multi-Account & Governance
-
-Enterprise governance at scale.
-
-- AWS Organizations
-- Organizational Units
-- Service Control Policies
-- AWS Control Tower
-- Landing Zone Architecture
-- Account Factory
-- AWS Resource Access Manager
-- Tagging Strategy
+| #    | Sub-Topic                                                                                                           | Description                                                                                            |
+| ---- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| 1.1  | [Introduction to Solution Architecture](./01-Architecture-Fundamentals/01-Introduction-to-Solution-Architecture.md) | What solution architecture is and how architects translate business problems into technology solutions |
+| 1.2  | [AWS Global Infrastructure](./01-Architecture-Fundamentals/02-AWS-Global-Infrastructure.md)                         | Regions, Availability Zones, Local Zones, Edge Locations, and Global Infrastructure                    |
+| 1.3  | [Business Requirements](./01-Architecture-Fundamentals/03-Business-Requirements.md)                                 | Functional vs Non-functional requirements                                                              |
+| 1.4  | [Architecture Decision Making](./01-Architecture-Fundamentals/04-Architecture-Decision-Making.md)                   | Evaluating alternatives, trade-offs, and decision frameworks                                           |
+| 1.5  | [Architecture Quality Attributes](./01-Architecture-Fundamentals/05-Architecture-Quality-Attributes.md)             | Reliability, scalability, security, performance, maintainability, and resiliency                       |
+| 1.6  | [AWS Design Principles](./01-Architecture-Fundamentals/06-AWS-Design-Principles.md)                                 | Design for failure, automation, loose coupling, least privilege, and stateless design                  |
+| 1.7  | [Architecture Patterns](./01-Architecture-Fundamentals/07-Architecture-Patterns.md)                                 | Monolith, microservices, serverless, event-driven, and API-centric architectures                       |
+| 1.8  | [Scalability, Availability & Resiliency](./01-Architecture-Fundamentals/08-Scalability-Availability-Resiliency.md)  | Designing systems that continue operating during failures                                              |
+| 1.9  | [Architecture Trade-offs](./01-Architecture-Fundamentals/09-Architecture-Trade-offs.md)                             | Cost vs performance, consistency vs availability, and other architectural trade-offs                   |
+| 1.10 | [Architecture Documentation & ADRs](./01-Architecture-Fundamentals/10-Architecture-Documentation-and-ADRs.md)       | Architecture diagrams, logical views, ADRs, and documentation                                          |
 
 ---
 
-## 4. Identity & Security
+# 2. AWS Well-Architected Framework
 
-Secure enterprise workloads.
+This section explains how AWS recommends designing secure, reliable, high-performing, cost-efficient, and sustainable workloads using the **AWS Well-Architected Framework**.
 
-- IAM
-- IAM Identity Center
-- STS
-- Cross-Account Access
-- KMS
-- Secrets Manager
-- GuardDuty
-- Security Hub
-- Inspector
-- Macie
-- WAF
-- Shield
-- Network Firewall
+📂 **[Explore → AWS Well-Architected Framework](./02-AWS-Well-Architected-Framework/README.md)**
 
----
-
-## 5. Network Architecture
-
-Design secure and scalable networking.
-
-- VPC
-- Subnets
-- Route Tables
-- Internet Gateway
-- NAT Gateway
-- VPC Peering
-- Transit Gateway
-- Direct Connect
-- Site-to-Site VPN
-- Route 53
-- CloudFront
-- Global Accelerator
-- AWS PrivateLink
-- ALB
-- NLB
-- Gateway Load Balancer
+| #   | Sub-Topic                                                                                  | Description                                                       |
+| --- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| 2.1 | [Framework Overview](./02-AWS-Well-Architected-Framework/01-Framework-Overview.md)         | Introduction to the Well-Architected Framework                    |
+| 2.2 | [Operational Excellence](./02-AWS-Well-Architected-Framework/02-Operational-Excellence.md) | Continuous improvement and operational best practices             |
+| 2.3 | [Security](./02-AWS-Well-Architected-Framework/03-Security.md)                             | Identity, detection, infrastructure protection, and data security |
+| 2.4 | [Reliability](./02-AWS-Well-Architected-Framework/04-Reliability.md)                       | Recovery, fault tolerance, and resiliency                         |
+| 2.5 | [Performance Efficiency](./02-AWS-Well-Architected-Framework/05-Performance-Efficiency.md) | Selecting efficient resources and optimizing workloads            |
+| 2.6 | [Cost Optimization](./02-AWS-Well-Architected-Framework/06-Cost-Optimization.md)           | Eliminating unnecessary expenses                                  |
+| 2.7 | [Sustainability](./02-AWS-Well-Architected-Framework/07-Sustainability.md)                 | Designing environmentally responsible workloads                   |
+| 2.8 | [Well-Architected Tool](./02-AWS-Well-Architected-Framework/08-Well-Architected-Tool.md)   | Reviewing workloads using AWS Well-Architected Tool               |
 
 ---
 
-## 6. Compute Architecture
+# 3. AWS Cloud Adoption Framework & Landing Zones
 
-Choose the right compute platform.
+This section explains how organizations adopt AWS at enterprise scale using the **AWS Cloud Adoption Framework (CAF)**, **AWS Organizations**, and **AWS Control Tower**.
 
-- EC2
-- Launch Templates
-- Auto Scaling
-- Spot Instances
-- Savings Plans
-- ECS
-- EKS
-- Lambda
-- Elastic Beanstalk
-- App Runner
-- AWS Outposts
+📂 **[Explore → AWS Cloud Adoption Framework & Landing Zones](./03-Multi-Account-and-Governance/README.md)**
 
----
-
-## 7. Application Architecture
-
-Build modern cloud-native applications.
-
-- Three-Tier Architecture
-- Microservices
-- API-First Design
-- Serverless Architecture
-- Event-Driven Architecture
-- Monolithic vs Microservices
+| #    | Sub-Topic                                                                                      | Description                                  |
+| ---- | ---------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| 3.1  | [AWS CAF Overview](./03-Multi-Account-and-Governance/01-AWS-CAF-Overview.md)                   | Introduction to AWS Cloud Adoption Framework |
+| 3.2  | [Business Perspective](./03-Multi-Account-and-Governance/02-Business-Perspective.md)           | Business transformation and outcomes         |
+| 3.3  | [People Perspective](./03-Multi-Account-and-Governance/03-People-Perspective.md)               | Skills, roles, and organizational readiness  |
+| 3.4  | [Governance Perspective](./03-Multi-Account-and-Governance/04-Governance-Perspective.md)       | Compliance, risk, and governance             |
+| 3.5  | [Platform Perspective](./03-Multi-Account-and-Governance/05-Platform-Perspective.md)           | Building cloud foundations                   |
+| 3.6  | [Security Perspective](./03-Multi-Account-and-Governance/06-Security-Perspective.md)           | Enterprise security planning                 |
+| 3.7  | [Operations Perspective](./03-Multi-Account-and-Governance/07-Operations-Perspective.md)       | Cloud operations and management              |
+| 3.8  | [AWS Organizations](./03-Multi-Account-and-Governance/08-AWS-Organizations.md)                 | Organizational Units, SCPs, and governance   |
+| 3.9  | [AWS Control Tower](./03-Multi-Account-and-Governance/09-AWS-Control-Tower.md)                 | Landing Zone implementation                  |
+| 3.10 | [Landing Zone Architecture](./03-Multi-Account-and-Governance/10-Landing-Zone-Architecture.md) | Enterprise multi-account architecture        |
 
 ---
 
-## 8. Messaging & Integration
+# 4. Identity & Security
 
-Connect distributed applications.
+This section focuses on securing AWS environments using identity management, encryption, threat detection, and Zero Trust security principles.
 
-- SNS
-- SQS
-- EventBridge
-- Step Functions
-- Amazon MQ
+📂 **[Explore → Identity & Security](./04-Identity-and-Security/README.md)**
 
----
-
-## 9. Storage Architecture
-
-Master AWS storage services.
-
-- S3
-- Storage Classes
-- Lifecycle Policies
-- Replication
-- Glacier
-- EBS
-- EFS
-- FSx
-- Storage Gateway
-- AWS Backup
+| #   | Sub-Topic                                                                   | Description                        |
+| --- | --------------------------------------------------------------------------- | ---------------------------------- |
+| 4.1 | [IAM Fundamentals](./04-Identity-and-Security/01-IAM-Fundamentals.md)       | Users, Groups, Roles, and Policies |
+| 4.2 | [IAM Identity Center](./04-Identity-and-Security/02-IAM-Identity-Center.md) | Enterprise authentication          |
+| 4.3 | [AWS STS](./04-Identity-and-Security/03-AWS-STS.md)                         | Temporary credentials              |
+| 4.4 | [KMS](./04-Identity-and-Security/04-KMS.md)                                 | Encryption and key management      |
+| 4.5 | [Secrets Manager](./04-Identity-and-Security/05-Secrets-Manager.md)         | Managing secrets securely          |
+| 4.6 | [GuardDuty](./04-Identity-and-Security/06-GuardDuty.md)                     | Threat detection                   |
+| 4.7 | [Security Hub](./04-Identity-and-Security/07-Security-Hub.md)               | Security posture management        |
+| 4.8 | [AWS WAF & Shield](./04-Identity-and-Security/08-WAF-and-Shield.md)         | Web application protection         |
 
 ---
 
-## 10. Database Architecture
+# 5. Network Architecture
 
-Select the right database for every workload.
+Design secure, scalable, and highly available AWS networking using VPC, Transit Gateway, Direct Connect, VPN, Route 53, CloudFront, and PrivateLink.
 
-- RDS
-- Aurora
-- DynamoDB
-- ElastiCache
-- Redshift
-- Neptune
-- DocumentDB
-- DMS
-- Schema Conversion Tool
+📂 **[Explore → Network Architecture](./05-Network-Architecture/README.md)**
 
----
-
-## 11. Data Analytics
-
-Modern data platforms on AWS.
-
-- Glue
-- Athena
-- EMR
-- Kinesis
-- Lake Formation
-- QuickSight
+| #   | Sub-Topic                                                                          | Description                       |
+| --- | ---------------------------------------------------------------------------------- | --------------------------------- |
+| 5.1 | [VPC Fundamentals](./05-Network-Architecture/01-VPC-Fundamentals.md)               | Building AWS virtual networks     |
+| 5.2 | [Subnets & Route Tables](./05-Network-Architecture/02-Subnets-and-Route-Tables.md) | Public and private networking     |
+| 5.3 | [Internet & NAT Gateway](./05-Network-Architecture/03-Internet-and-NAT-Gateway.md) | Internet connectivity             |
+| 5.4 | [Transit Gateway](./05-Network-Architecture/04-Transit-Gateway.md)                 | Hub-and-spoke networking          |
+| 5.5 | [Direct Connect](./05-Network-Architecture/05-Direct-Connect.md)                   | Dedicated enterprise connectivity |
+| 5.6 | [CloudFront](./05-Network-Architecture/06-CloudFront.md)                           | Global content delivery           |
+| 5.7 | [PrivateLink](./05-Network-Architecture/07-PrivateLink.md)                         | Private service connectivity      |
 
 ---
 
-## 12. Containers & Serverless
+# 6. Compute Architecture
 
-Modern application deployment.
+Learn how to select the right compute platform for different workloads using EC2, Auto Scaling, ECS, EKS, Lambda, Elastic Beanstalk, and App Runner.
 
-- ECS
-- Fargate
-- EKS
-- Lambda
-- API Gateway
-- Container Patterns
+📂 **[Explore → Compute Architecture](./06-Compute-Architecture/README.md)**
 
 ---
 
-## 13. Observability & Operations
+# 7. Application Architecture
 
-Monitor production workloads.
+Design modern cloud-native applications using three-tier, microservices, serverless, API-first, and event-driven architectures.
 
-- CloudWatch
-- CloudTrail
-- AWS Config
-- X-Ray
-- Systems Manager
-- Trusted Advisor
-- Compute Optimizer
+📂 **[Explore → Application Architecture](./07-Application-Architecture/README.md)**
 
 ---
 
-## 14. Disaster Recovery & Business Continuity
+# 8. Messaging & Integration
 
-Design resilient enterprise systems.
+Connect distributed applications using SNS, SQS, EventBridge, Step Functions, and Amazon MQ.
 
-- Backup Strategies
-- Multi-AZ
-- Multi-Region
-- Pilot Light
-- Warm Standby
-- Active-Active
-- RPO & RTO Planning
+📂 **[Explore → Messaging & Integration](./08-Messaging-and-Integration/README.md)**
 
 ---
 
-## 15. Migration & Modernization
+# 9. Storage Architecture
 
-Move workloads to AWS.
+Master AWS storage services including S3, EBS, EFS, FSx, Storage Gateway, lifecycle policies, replication, and AWS Backup.
 
-- AWS Cloud Adoption Framework (CAF)
-- Migration Hub
-- Application Migration Service
-- DMS
-- SCT
-- Snow Family
+📂 **[Explore → Storage Architecture](./09-Storage-Architecture/README.md)**
 
 ---
 
-## 16. Cost Optimization
+# 10. Database Architecture
 
-Reduce cloud spending.
+Choose the right database service for every workload using RDS, Aurora, DynamoDB, Redshift, ElastiCache, Neptune, DocumentDB, DMS, and SCT.
 
-- Savings Plans
-- Reserved Instances
-- Spot Instances
-- Cost Explorer
-- AWS Budgets
-- Trusted Advisor
+📂 **[Explore → Database Architecture](./10-Database-Architecture/README.md)**
 
 ---
 
-## 17. Professional Design Scenarios
+# 11. Data Analytics
 
-Solve enterprise architecture challenges.
+Build modern analytics platforms using Glue, Athena, EMR, Kinesis, Lake Formation, and QuickSight.
 
-- Multi-Account Design
-- Landing Zone Implementation
-- Hybrid Connectivity
-- Security Architectures
-- Financial Governance
-- Compliance Scenarios
+📂 **[Explore → Data Analytics](./11-Data-Analytics/README.md)**
 
 ---
 
-## 18. Architecture Diagrams
+# 12. Containers & Serverless
 
-Production-ready AWS reference architectures.
+Deploy containerized and serverless workloads using ECS, EKS, Fargate, Lambda, and API Gateway.
 
-- Three-Tier
-- Serverless
-- Hub-Spoke
-- Multi-Account
-- Transit Gateway
-- Disaster Recovery
-- Microservices
+📂 **[Explore → Containers & Serverless](./12-Containers-and-Serverless/README.md)**
 
 ---
 
-## 19. Interview Questions
+# 13. Observability & Operations
 
-Prepare for technical interviews.
+Implement monitoring, logging, tracing, automation, compliance, and operational excellence using CloudWatch, CloudTrail, AWS Config, X-Ray, Systems Manager, and Trusted Advisor.
 
-- Service-wise Questions
-- Scenario-based Questions
-- Architecture Design Questions
+📂 **[Explore → Observability & Operations](./13-Observability-and-Operations/README.md)**
 
 ---
 
-## 20. Capstone Projects
+# 14. Disaster Recovery & Business Continuity
 
-Build complete AWS projects.
+Design resilient enterprise architectures using Multi-AZ, Multi-Region, Pilot Light, Warm Standby, and Active-Active strategies.
 
-- Highly Available Web Application
-- Enterprise Landing Zone
-- Serverless Image Processor
-- Microservices Platform
-- Disaster Recovery Architecture
+📂 **[Explore → Disaster Recovery & Business Continuity](./14-Disaster-Recovery-and-BCP/README.md)**
+
+---
+
+# 15. Migration & Modernization
+
+Plan enterprise cloud migration using AWS Cloud Adoption Framework, Migration Hub, Application Migration Service, DMS, SCT, and Snow Family.
+
+📂 **[Explore → Migration & Modernization](./15-Migration-and-Modernization/README.md)**
+
+---
+
+# 16. Cost Optimization
+
+Reduce cloud spending using Savings Plans, Reserved Instances, Spot Instances, Cost Explorer, Budgets, and Trusted Advisor.
+
+📂 **[Explore → Cost Optimization](./16-Cost-Optimization/README.md)**
+
+---
+
+# 17. Professional Design Scenarios
+
+Solve real SAP-C02 enterprise architecture scenarios involving governance, networking, security, migration, disaster recovery, and cost optimization.
+
+📂 **[Explore → Professional Design Scenarios](./17-Professional-Scenarios/README.md)**
+
+---
+
+# 18. Architecture Diagrams
+
+A collection of production-ready AWS reference architectures and visual design patterns.
+
+📂 **[Explore → Architecture Diagrams](./18-Architecture-Diagrams/README.md)**
+
+---
+
+# 19. Interview Questions
+
+Prepare for AWS Solutions Architect interviews with service-wise, scenario-based, and architecture design questions.
+
+📂 **[Explore → Interview Questions](./19-Interview-Questions/README.md)**
+
+---
+
+# 20. Capstone Projects
+
+Build complete enterprise AWS projects from scratch using production-ready architectures.
+
+📂 **[Explore → Capstone Projects](./20-Capstone-Projects/README.md)**
 
 ---
 
@@ -397,19 +327,22 @@ AWS-Solutions-Architect-Professional-Zero-to-Hero
 Architecture Fundamentals
         │
         ▼
-Well-Architected Framework
+AWS Well-Architected Framework
         │
         ▼
-Governance & Security
+Cloud Adoption Framework & Landing Zones
+        │
+        ▼
+Identity & Security
         │
         ▼
 Networking & Compute
         │
         ▼
-Storage & Databases
+Application Architecture
         │
         ▼
-Application Architecture
+Storage & Databases
         │
         ▼
 Monitoring & Operations
@@ -424,20 +357,18 @@ Professional Design Scenarios
 Capstone Projects
 ```
 
-Follow the modules sequentially to build a strong foundation before moving into enterprise-scale solution architecture.
-
 ---
 
-# 👨‍💻 Who Is This For?
+# 👨‍💻 Who Is This Repository For?
 
 This repository is designed for:
 
-- Students learning AWS from scratch
-- Cloud Engineers
-- DevOps Engineers
-- Solutions Architects
-- Full Stack Developers transitioning into Cloud
-- Professionals preparing for **SAP-C02**
+* Students learning AWS from scratch
+* Cloud Engineers
+* DevOps Engineers
+* Solutions Architects
+* Full Stack Developers transitioning into Cloud
+* Professionals preparing for **AWS Certified Solutions Architect – Professional (SAP-C02)**
 
 ---
 
@@ -457,4 +388,4 @@ If this repository helps you learn AWS, consider giving it a **Star ⭐** to sup
 
 # 📄 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License**. </escape>
