@@ -17,7 +17,6 @@
 <p align="center">
   From AWS architecture fundamentals to enterprise solution design — comprehensive explanations, architecture patterns, hands-on labs, real-world scenarios, interview preparation, and production-ready projects.
 </p>
----
 
 # ☁️ About This Repository
 
